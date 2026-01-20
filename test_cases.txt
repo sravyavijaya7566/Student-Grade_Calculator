@@ -1,0 +1,130 @@
+==============================
+ TEST CASES FOR GRADE CALCULATOR
+==============================
+
+--------------------------------
+1. VALID INPUT TESTS
+--------------------------------
+
+Input:
+  Name: Priya
+  Marks: 95
+Expected Output:
+  Grade: A
+  Message: Excellent! Keep it up! 🌟
+
+Input:
+  Name: Rahul
+  Marks: 85
+Expected Output:
+  Grade: B
+  Message: Very Good! Keep it up! 👍
+
+Input:
+  Name: Sneha
+  Marks: 75
+Expected Output:
+  Grade: C
+  Message: Good job! You can do even better! 💪
+
+Input:
+  Name: Arjun
+  Marks: 65
+Expected Output:
+  Grade: D
+  Message: You passed! Keep learning! 😊
+
+Input:
+  Name: Kiran
+  Marks: 40
+Expected Output:
+  Grade: F
+  Message: Don't give up! Try harder next time! 💖
+
+
+--------------------------------
+2. BOUNDARY VALUE TESTS
+--------------------------------
+
+Input:
+  Marks: 100
+Expected: Grade A
+
+Input:
+  Marks: 90
+Expected: Grade A
+
+Input:
+  Marks: 89
+Expected: Grade B
+
+Input:
+  Marks: 80
+Expected: Grade B
+
+Input:
+  Marks: 79
+Expected: Grade C
+
+Input:
+  Marks: 70
+Expected: Grade C
+
+Input:
+  Marks: 69
+Expected: Grade D
+
+Input:
+  Marks: 60
+Expected: Grade D
+
+Input:
+  Marks: 59
+Expected: Grade F
+
+Input:
+  Marks: 0
+Expected: Grade F
+
+
+--------------------------------
+3. INVALID INPUT TESTS
+--------------------------------
+
+Case 1:
+  Input Marks: -10
+Expected:
+  "Invalid marks! Please enter a number between 0 and 100."
+
+Case 2:
+  Input Marks: 150
+Expected:
+  "Invalid marks! Please enter a number between 0 and 100."
+
+Case 3:
+  Input Marks: "abc"
+Expected:
+  "Invalid input! Please enter numeric marks only."
+
+Case 4:
+  Input Marks: ""
+Expected:
+  "Invalid input! Please enter numeric marks only."
+
+
+--------------------------------
+4. MULTIPLE ATTEMPT TEST
+--------------------------------
+
+Input Sequence:
+  Marks: "hello" → invalid
+  Marks: -5 → invalid
+  Marks: 105 → invalid
+  Marks: 82 → valid
+
+Expected:
+  Final Grade: B
+  Final Message: Very Good! Keep it up! 👍
+
+
+=================
